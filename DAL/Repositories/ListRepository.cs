@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Repositories
 {
-    internal class ListRepository : IListRepository
+    public class ListRepository : IListRepository
     {
         private readonly AppDB _context;
         public ListRepository(AppDB context)

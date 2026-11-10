@@ -12,5 +12,6 @@ namespace DAL.Repositories
         TodoItem getItemByID(int id);
         List<TodoItem> getItemsList();
         TodoItem addItem(TodoItem item);
+        object? GetItemsList(int userId);
     }
 }
