@@ -14,20 +14,24 @@ namespace DAL.Repositories
         {
             _context = context;
         }
-        public TodoItem addItem(TodoItem item)
+        public TodoItem AddItem(TodoItem item)
         {
             _context.TodoItems.Add(item);
             _context.SaveChanges();
             return item;
         }
-        public TodoItem getItemByID(int id)
+        public TodoItem GetItemByID(int id)
         {
             return _context.TodoItems.FirstOrDefault(i => i.Id == id);
         }
-        public List<TodoItem> getItemsList()
+        public List<TodoItem> GetItemsList()
         {
             return _context.TodoItems.ToList();
         }
 
+        public object? GetItemsList(int userId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

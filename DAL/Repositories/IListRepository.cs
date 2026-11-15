@@ -9,9 +9,9 @@ namespace DAL.Repositories
 {
     public interface IListRepository
     {
-        TodoItem getItemByID(int id);
-        List<TodoItem> getItemsList();
-        TodoItem addItem(TodoItem item);
+        TodoItem GetItemByID(int id);
+        List<TodoItem> GetItemsList();
+        TodoItem AddItem(TodoItem item);
         object? GetItemsList(int userId);
     }
 }
